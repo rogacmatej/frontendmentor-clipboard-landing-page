@@ -1,0 +1,127 @@
+@use '../abstracts' as *;
+
+section {
+  padding-bottom: 15rem;
+}
+
+.cta-container {
+  display: flex;
+  column-gap: 1.6rem;
+  row-gap: 2.4rem;
+  margin-top: 4.6rem;
+  justify-content: center;
+}
+
+.track-snippets-section {
+  h2 {
+    margin-bottom: 1.6rem;
+  }
+
+  .track-snippets-bottom {
+    align-items: center;
+    display: flex;
+    margin-top: 8rem;
+  }
+
+  .track-snippets__image {
+    position: relative;
+    right: 3rem;
+  }
+
+  .keep-track-step {
+    max-width: 33.3rem;
+
+    &__heading {
+      margin-top: 5.6rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+.access-everywhere-section {
+  h2 {
+    margin-bottom: 1.6rem;
+  }
+
+  p {
+    margin-bottom: 6.5rem;
+  }
+}
+
+.supercharge-workflow-section {
+  h2 {
+    margin-bottom: 1.6rem;
+  }
+
+  .workflow {
+    margin-top: 7.2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    align-items: baseline;
+    column-gap: 3rem;
+    row-gap: 5.6rem;
+
+    &-item {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+
+    &__icon {
+      margin-bottom: 4rem;
+    }
+
+    &__heading {
+      margin-bottom: 1.8rem;
+    }
+  }
+}
+
+.sponsors-section {
+  .sponsors {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    column-gap: 2rem;
+    row-gap: 5.6rem;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.app-sections {
+  h2 {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .supercharge-workflow-section {
+    .workflow {
+      grid-template-columns: repeat(auto-fill, minmax(31.1rem, 1fr));
+    }
+  }
+
+  .track-snippets-section {
+    .track-snippets-bottom {
+      flex-direction: column;
+    }
+
+    .track-snippets__image {
+      position: relative;
+      right: unset;
+      margin-inline: 1.6rem;
+    }
+
+    .keep-track-step {
+      max-width: unset;
+      text-align: center;
+      margin-inline: 1.6rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .cta-container {
+    flex-direction: column;
+  }
+}

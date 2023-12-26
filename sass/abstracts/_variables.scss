@@ -1,0 +1,29 @@
+:root {
+  --clr-cyan-400: 171, 66%, 44%;
+  --clr-blue-400: 233, 100%, 69%;
+
+  --clr-neutral-200: 201, 11%, 66%;
+  --clr-neutral-400: 210, 10%, 33%;
+
+  --bs2: 0px 10px 20px 0px rgba(137, 229, 199, 0.5),
+    0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+  --bs1: 0px 10px 20px 0px rgba(0, 0, 0, 0.1),
+    0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+
+  --ff-body: 'BaiJamjuree', sans-serif;
+  --ff-heading: 'BaiJamjuree', sans-serif;
+
+  --fw-light: 400;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 600;
+}
+
+$grid-breakpoints: (
+  xs: 375px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
